@@ -24,3 +24,27 @@ The project evaluates multiple approaches for classifying tweets as positive, ne
 | Few-shot FLAN-T5* | 0.750 | 0.727 | 0.656 | 0.711 | 0.040 |
 
 \*Few-shot prompting was evaluated on stratified subsets for faster experimentation, so it should not be treated as directly equivalent to the full-test BERT result.
+
+## Setup
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Data
+
+This project uses the SemEval 2017 Task 4 Twitter sentiment dataset.
+
+Download the dataset and place the files in the appropriate data directory before running the notebook.
+
+## Quantized BERT Model
+
+The quantized BERT model is not stored in this repository due to size constraints.
+
+Download it from:
+
+https://figshare.com/articles/dataset/bert_model_quant/28674791
+
+and place the `bert_model_quant` folder in the project root before running BERT inference.
